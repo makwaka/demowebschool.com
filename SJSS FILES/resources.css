@@ -1,0 +1,71 @@
+body {
+  font-size: normal;
+  line-height: normal;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.logo {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+.container {
+  padding-bottom: 5px;
+}
+h5 {
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: underline;
+  color: red;
+}
+
+.info li {
+  display: inline;
+  padding-left: 15px;
+}
+.info a {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  color: maroon;
+}
+#navbar {
+   background-color: rgb(66, 242, 207);
+}
+footer {
+  background-color: burlywood;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.contacts {
+  text-align: center;
+  background-color: rgb(6, 118, 96);
+  padding: 1px;
+}
+.contacts h3 {
+  text-decoration: underline;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa hover {
+  color: yellow;
+}
