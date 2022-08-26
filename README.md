@@ -1,4 +1,4 @@
-# St.Joseph's
+# School web demo.
 School repo
 
 
