@@ -1,9 +1,25 @@
-body {
+body, html {
   font-size: normal;
   line-height: normal;
   min-height: 100vh;
   overflow-x: hidden;
-  
+  scroll-behavior: smooth;
+}
+
+/* responsive design for both mobile and desktop mode*/
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+/* pseudp-element for style for when text has been highlighted*/
+::selection {
+  background-color: rgb(0, 240, 248);
+}
+
+#waves{
+  height: 0.00000000001px;
+  padding-bottom: 1rem;
 }
 
 .logo {
@@ -12,7 +28,8 @@ body {
 
 h1 {
   text-align: center;
-  color: green;
+  color:#cd2b06;
+  font-size: 1.3em;
 }
 .container {
   padding-bottom: 5px;
@@ -54,26 +71,31 @@ a:visited {
 }
 #sports li {
   font-size: xx-large;
+  color: #6B7A8F;
 }
 #drama {
   text-align: center;
   font-size: xx-large;
+  color: #6B7A8F;
 }
 #environment {
   text-align: center;
 }
 #environment li {
   font-size: xx-large;
+  color: #6B7A8F;
 }
 #dancing {
   text-align: center;
+  color: #6B7A8F;
 }
 #dancing li {
   font-size: xx-large;
+  color: #6B7A8F;
 }
 p {text-align: center;
-  font-size: x-large;
-  color: rgb(255, 0, 0);
+  font-size: 1em;
+  color:black;
   text-decoration: wavy;
   
 }

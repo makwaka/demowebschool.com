@@ -1,18 +1,37 @@
-body {
+body, html {
   font-size: normal;
   line-height: normal;
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* responsive design for both mobile and desktop mode*/
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+/* pseudp-element for style for when text has been highlighted*/
+::selection {
+  background-color: rgb(0, 240, 248);
+}
+
+
+#waves{
+  height: 0.00000000001px;
+  padding-bottom: 1rem;
 }
 
 p{
-  font-size: x-large;
+  font-size:1em;
   line-height: 30px;
 }
 
 .clubs li {
   font-weight: bolder;
-  font-size: larger;
+  font-size: 1em;
+  font-style: tahoma;
 }
 
 .logo {
@@ -23,7 +42,7 @@ h1 {
   text-align: center;
   color: green;
 }
-.container {
+.info {
   padding-bottom: 5px;
 }
 h5 {
@@ -33,11 +52,11 @@ h5 {
   color: red;
 }
 
-.container li {
+.info li {
   display: inline;
   padding-left: 15px;
 }
-.container a {
+.info a {
   font-size: x-large;
   text-decoration: none;
 }
@@ -52,7 +71,10 @@ a:visited {
   color: maroon;
 }
 #navbar {
-  background-color: rgb(12, 214, 210);
+  background-color: rgb(66, 242, 207);
+}
+.clubs li{
+font-weight: bolder;
 }
 
 footer {

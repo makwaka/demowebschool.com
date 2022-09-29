@@ -1,8 +1,26 @@
-body {
+body, html {
   font-size: normal;
   line-height: normal;
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* responsive design for both mobile and desktop mode*/
+@-ms-viewport{
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+/* pseudp-element for style for when text has been highlighted*/
+::selection {
+  background-color: rgb(0, 240, 248);
+}
+
+
+#waves{
+  height: 0.00000000001px;
+  padding-bottom: 1rem;
 }
 
 .logo {
