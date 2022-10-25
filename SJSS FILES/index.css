@@ -4,6 +4,7 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: #FFF7E9;
 }
 
 /* responsive design for both mobile and desktop mode*/
@@ -49,6 +50,10 @@ h5 {
   text-decoration: none;
 }
 
+
+.footer a{
+color: rgb(255, 0, 140);
+}
 a:hover {
   color: red;
 }
