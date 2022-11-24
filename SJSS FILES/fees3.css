@@ -1,10 +1,20 @@
-body, html {
-  font-size: normal;
-  line-height: normal;
+*,
+::before,
+::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.5;
   min-height: 100vh;
+  font-family: sans-serif, monospace;
+}
+
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: #FFF7E9;
 }
 
 /* responsive design for both mobile and desktop mode*/
@@ -18,52 +28,60 @@ body, html {
   background-color: rgb(0, 240, 248);
 }
 
-
 #waves{
-  height: 0.00000000001px;
-  padding-bottom: 1rem;
+  height: 0.0000000000000000000001px;
+  width: 100vw;
 }
 
 .logo {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 h1 {
   text-align: center;
   color: green;
+  font-size: 1.3rem;
+  padding-top: 0;
+  margin-bottom: 0;
 }
-.container {
-  padding-bottom: 5px;
-}
+
 h5 {
+  margin-top: 5px;
   text-align: center;
-  font-size: xx-large;
+  font-size: 1.2rem;
   text-decoration: underline;
   color: red;
+  margin-bottom: 1.5rem;
 }
 
 .info li {
   display: inline;
-  padding-left: 15px;
-}
-.info a {
-  font-size: x-large;
-  text-decoration: none;
-}
 
-a:hover {
+}
+.info li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding-left: 5rem;
+}
+.info li a:hover{
   color: red;
 }
-a:active {
-  color: green;
-}
-a:visited {
-  color: maroon;
-}
 #navbar {
-  background-color: rgb(66, 242, 207);
+  background: rgb(4, 201, 250);
 }
 
+.footer a{
+color: rgb(255, 0, 140);
+}
+
+.logo img {
+  width: 150px;
+  height: 170px;
+  margin-bottom: 1.5rem;
+}
 p {
   color: rgb(255, 0, 106);
   font-weight: bolder;
