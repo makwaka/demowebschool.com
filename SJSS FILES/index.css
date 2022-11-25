@@ -97,13 +97,13 @@ h5 {
   background: rgb(4, 201, 250);
 }
 
-.footer a{
-color: rgb(255, 0, 140);
+.contacts a{
+color: blue;
 }
 
 .logo img {
   width: 150px;
-  height: 170px;
+  height: 150px;
   margin-bottom: 1.5rem;
 }
 .flex-container {
@@ -113,7 +113,7 @@ color: rgb(255, 0, 140);
  justify-content: space-between;
 }
 .flexbox {
-  max-width:90vw;
+  /* max-width:90vw; */
   display: grid;
   align-items: center;
   justify-content: center;
@@ -126,6 +126,7 @@ color: rgb(255, 0, 140);
 }
 .flexbox p {
   font-weight: bolder;
+  font-size: 15px;
 }
 .announcements {
   border-radius: 30%;
@@ -136,7 +137,8 @@ color: rgb(255, 0, 140);
   box-shadow: 2px  4px 10px rebeccapurple;
 }
 .announcements p {
-  color: red;
+  color: dodgerblue;
+  font-size: 15px;
 }
 
 .comments-container{
@@ -147,7 +149,7 @@ color: rgb(255, 0, 140);
 figure {
     border:rgb(4, 201, 250);
   display: flex;
-  padding: 2px;
+  padding: 20px;
   text-align: center;
   margin:0 auto;
   font-size: 1rem;
@@ -193,13 +195,16 @@ figcaption {
 footer {
   background-color: burlywood;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
 }
 .contacts {
-  text-align: center;
   background-color: rgb(6, 118, 96);
   padding: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
 }
 .contacts h3 {
   text-decoration: underline;
@@ -212,6 +217,24 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-.fa hover {
-  color: yellow;
+
+
+@media screen and (max-width: 800px){
+  .info li a {
+    font-size: 0.5rem;
+    padding-left: 0.7rem;
+  }
+  .announcements p {
+    font-size: 10px;
+  }
+
+.flexbox {
+  max-width:90vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  row-gap: 2rem;
+  font-size: 10px;
+}
 }
