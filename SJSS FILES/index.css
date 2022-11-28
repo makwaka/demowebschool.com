@@ -11,12 +11,91 @@ body{
   min-height: 100vh;
   font-family: sans-serif, monospace;
   width: 100vw;
+  background: hsl(210, 36%, 96%);
 }
+
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* To style the vision mission and values section */
+.section-center{
+  width: 90vw;
+  margin: 20px auto;
+  max-width: 1100px;
+
+}
+
+.section-center img{
+margin-bottom: 2rem;
+border-radius: 5px;
+object-fit: cover;
+height: 10rem;
+display: block;
+  box-shadow: 0 5px 5px 0 dodgerblue;
+}
+/* style the buttons container */
+.btn-container {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* style of first tab button */
+.tab-btn {
+  text-transform: uppercase;
+  background: blue;
+  padding: 1rem 0;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all .3s linear;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 dodgerblue;
+  border-radius: 5px;
+}
+
+.tab-btn:nth-child(1){
+  border-top-left-radius: 0.5rem;
+}
+.tab-btn:nth-child(3) {
+  border-top-right-radius: 0.5rem;
+}
+
+
+
+.tab-btn:hover:not(.active){
+  background: greenyellow;
+  color: black;
+}
+
+.about-content{
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+/* hide content */
+.content{
+  display: none;
+}
+.tab-btn.active{
+  background: white;
+}
+/* display content when it has class of active */
+.content.active{
+  display: block;
+}
+
 
 /* responsive design for both mobile and desktop mode*/
 @-ms-viewport{
@@ -26,7 +105,7 @@ html {
 
 
 
-/* pseudp-element for style for when text has been highlighted*/
+/* pseud0-element for style for when text has been highlighted*/
 ::selection {
   background-color: rgb(0, 240, 248);
 }
@@ -109,37 +188,26 @@ color: blue;
 .flex-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
- justify-content: space-between;
 }
-.flexbox {
-  /* max-width:90vw; */
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  row-gap: 2rem;
-}
-.flexbox h4 {
-  text-decoration: underline;
-  color: green;
-}
-.flexbox p {
-  font-weight: bolder;
-  font-size: 15px;
-}
+
 .announcements {
-  border-radius: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
   text-align: center;
-  display: grid;
   font-size: 20px;
-  margin-bottom: 20px;
+  width: 90vw;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
   box-shadow: 2px  4px 10px rebeccapurple;
 }
 .announcements p {
-  color: dodgerblue;
-  font-size: 15px;
+  color: red;
+  font-size: 25px;
+  margin: 1rem 1rem;
 }
+
 
 .comments-container{
   display: block;
@@ -148,17 +216,19 @@ color: blue;
 
 figure {
     border:rgb(4, 201, 250);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
   padding: 20px;
   text-align: center;
   margin:0 auto;
   font-size: 1rem;
   line-height: 2;
+
 }
 figure img{
-  float: right;
-  width: 20%;
-  height: 20%;
+  float: left;
+  margin: 0 auto;
   border-radius: 20px;
  background: #eee;
  box-shadow: 0 8px 8px -4px lightblue;
@@ -171,24 +241,20 @@ figcaption {
   text-align: left;
 }
 .admission {
-  border-radius: 20px;
- background: #eee;
+ background: transparent;
  box-shadow: 0 8px 8px -4px lightblue;
-  border-radius: 50px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1rem;
-  line-height: 2;
+margin:20px;
+  font-size: 20px;
+  line-height: 1.5;
+  border: none;
 }
 .admission h3 {
-  text-align: center;
-  margin-left: 90px;
+  margin:5px 5px;
 }
 .admission li {
-  font-size: 1em;
+  font-size: 15px;
   font-weight: bold;
-  text-align: center;
-  padding: 10px;
+  padding: 5px;
   list-style: none;
 }
 
@@ -220,13 +286,30 @@ flex-direction: column;
 
 
 @media screen and (max-width: 800px){
+  .section-center{
+width: 95vw;
+  }
+
   .info li a {
     font-size: 0.5rem;
     padding-left: 0.7rem;
   }
   .announcements p {
-    font-size: 10px;
+    font-size: 20px;
   }
+    .announcements {
+      display: flex;
+      border-radius: 1rem;
+      font-size: 15px;
+      min-width: 100vw;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    .announcements p {
+      font-size: 10px;
+      margin: 0.2rem 0.2rem;
+    }
 
 .flexbox {
   max-width:90vw;
@@ -237,4 +320,16 @@ flex-direction: column;
   row-gap: 2rem;
   font-size: 10px;
 }
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    margin-bottom: 0;
+  }
+
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
