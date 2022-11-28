@@ -54,7 +54,7 @@ display: block;
 /* style of first tab button */
 .tab-btn {
   text-transform: uppercase;
-  background: blue;
+  background: #eee;
   padding: 1rem 0;
   letter-spacing: 1px;
   display: inline-block;
@@ -89,7 +89,7 @@ display: block;
   display: none;
 }
 .tab-btn.active{
-  background: white;
+  background: red;
 }
 /* display content when it has class of active */
 .content.active{
@@ -269,17 +269,18 @@ footer {
   padding: 1px;
   display: flex;
   justify-content: center;
+
   align-items: center;
-flex-direction: column;
+  flex-direction: column;
 }
 .contacts h3 {
+  margin: 1rem 0;
   text-decoration: underline;
 }
 
 .fa {
-  padding: 20px;
+  padding: 10px 0;
   font-size: 30px;
-  width: 50px;
   text-align: center;
   text-decoration: none;
 }
