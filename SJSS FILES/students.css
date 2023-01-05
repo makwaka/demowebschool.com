@@ -78,9 +78,8 @@ h5 {
 }
 
 .contacts a {
-  color: blue;
+  color: rgb(113, 235, 13);
 }
-
 .logo img {
   width: 150px;
   height: 150px;
@@ -121,8 +120,13 @@ p {text-align: center;
   font-size: 1em;
   color:black;
   text-decoration: wavy;
-
 }
+.hobbies img{
+  object-fit: contain;
+  box-shadow: 10px 10px 20px rgba(235, 10, 10, 0.945);
+  border-radius: 20px;
+}
+
 footer {
   background-color: burlywood;
   text-align: center;

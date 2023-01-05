@@ -78,8 +78,14 @@ h5 {
   background: rgb(4, 201, 250);
 }
 
+.about-container{
+  width: 90vw;
+  margin: 0 auto;
+  background-color: red;
+}
+
 .contacts a {
-  color: blue;
+  color: rgb(113, 235, 13);
 }
 
 .logo img {
@@ -141,6 +147,7 @@ a:visited {
 .clubs li{
 font-weight: bolder;
 }
+
 footer {
   background-color: burlywood;
   text-align: center;

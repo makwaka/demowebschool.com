@@ -14,7 +14,6 @@ body{
   background: hsl(210, 36%, 96%);
 }
 
-
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -33,7 +32,6 @@ a{
   width: 90vw;
   margin: 20px auto;
   max-width: 1100px;
-
 }
 
 .section-center img{
@@ -44,6 +42,11 @@ height: 10rem;
 display: block;
   box-shadow: 0 5px 5px 0 dodgerblue;
 }
+
+/* vision mission article */
+.about{
+  height: 250px;
+}
 /* style the buttons container */
 .btn-container {
   border-top-left-radius: 0.5rem;
@@ -51,6 +54,11 @@ display: block;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.btn-container button{
+  color:gray;
+  font-weight: bolder;
+}
+
 /* style of first tab button */
 .tab-btn {
   text-transform: uppercase;
@@ -73,11 +81,9 @@ display: block;
   border-top-right-radius: 0.5rem;
 }
 
-
-
 .tab-btn:hover:not(.active){
-  background: greenyellow;
-  color: black;
+  background: rgb(233, 181, 10);
+  color: rgb(26, 25, 25);
 }
 
 .about-content{
@@ -89,22 +95,17 @@ display: block;
   display: none;
 }
 .tab-btn.active{
-  background: red;
+  background:rgb(113, 235, 13);;
 }
 /* display content when it has class of active */
 .content.active{
   display: block;
 }
-
-
 /* responsive design for both mobile and desktop mode*/
 @-ms-viewport{
   width: extend-to-zoom;
   zoom: 1.0;
 }
-
-
-
 /* pseud0-element for style for when text has been highlighted*/
 ::selection {
   background-color: rgb(0, 240, 248);
@@ -129,7 +130,6 @@ display: block;
   visibility: hidden;
   z-index: -999;
 }
-
 
 #waves{
   height: 0.0000000000000000000001px;
@@ -160,7 +160,6 @@ h5 {
 
 .info li {
   display: inline;
-
 }
 .info li a {
   font-size: 1.2rem;
@@ -176,8 +175,8 @@ h5 {
   background: rgb(4, 201, 250);
 }
 
-.contacts a{
-color: blue;
+.contacts a {
+  color: rgb(113, 235, 13);
 }
 
 .logo img {
@@ -207,8 +206,6 @@ color: blue;
   font-size: 25px;
   margin: 1rem 1rem;
 }
-
-
 .comments-container{
   display: block;
   justify-content: center;
@@ -224,7 +221,6 @@ figure {
   margin:0 auto;
   font-size: 1rem;
   line-height: 2;
-
 }
 figure img{
   float: left;
@@ -233,8 +229,6 @@ figure img{
  background: #eee;
  box-shadow: 0 8px 8px -4px lightblue;
 }
-
-
 figcaption {
   font-size: 1em;
   padding: 2px;
@@ -269,9 +263,11 @@ footer {
   padding: 1px;
   display: flex;
   justify-content: center;
-
   align-items: center;
   flex-direction: column;
+}
+.contacts p{
+  font-weight: bold;
 }
 .contacts h3 {
   margin: 1rem 0;
