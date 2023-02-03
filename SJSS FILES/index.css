@@ -124,7 +124,6 @@ display: block;
   visibility: visible;
   z-index: 999;
   transition: all .3s linear;
-  mix-blend-mode: multiply;
 }
 /* to be added in JS */
 .hide-preloader{
