@@ -106,7 +106,10 @@ footer {
   margin: 1rem 0;
   text-decoration: underline;
 }
-
+.resources {
+  display: flex;
+  justify-content: center;
+}
 .fa {
   padding: 10px 0;
   font-size: 30px;

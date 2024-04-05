@@ -149,6 +149,15 @@ h1 {
   margin-bottom: 0;
 }
 
+.about-container {
+  background-color: whitesmoke;
+  padding: 2rem;
+  margin:1rem ;
+}
+.clubs{
+  padding: 1rem 0;
+}
+
 h5 {
   margin-top: 5px;
   text-align: center;
@@ -258,6 +267,7 @@ footer {
   font-size: 15px;
   padding: 10px;
 }
+
 .contacts {
   background-color: rgb(6, 118, 96);
   padding: 1px;
@@ -266,9 +276,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-.contacts p{
-  font-weight: bold;
-}
+
 .contacts h3 {
   margin: 1rem 0;
   text-decoration: underline;
@@ -281,23 +289,29 @@ footer {
   text-decoration: none;
 }
 
+.about-container {
+  padding: 0 2rem;
+}
 
 @media screen and (max-width: 800px){
-  .section-center{
-width: 95vw;
+
+  .info li {
+    display: flex;
+    display: inline-block;
   }
 
   .info li a {
-    font-size: 0.5rem;
-    padding-left: 0.7rem;
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
   }
+
   .announcements p {
     font-size: 20px;
   }
     .announcements {
       display: flex;
       border-radius: 1rem;
-      font-size: 15px;
+      font-size: 13px;
       min-width: 100vw;
       margin: 0 auto;
       margin-bottom: 3rem;
@@ -307,16 +321,6 @@ width: 95vw;
       font-size: 10px;
       margin: 0.2rem 0.2rem;
     }
-
-.flexbox {
-  max-width:90vw;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  row-gap: 2rem;
-  font-size: 10px;
-}
 }
 
 @media screen and (min-width: 992px) {
@@ -329,4 +333,11 @@ width: 95vw;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
+    .info li a {
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      padding-left: 5rem;
+    }
 }
