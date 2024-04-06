@@ -158,6 +158,10 @@ h1 {
   padding: 1rem 0;
 }
 
+#rector{
+  position: sticky;
+}
+
 h5 {
   margin-top: 5px;
   text-align: center;
