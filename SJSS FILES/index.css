@@ -269,7 +269,7 @@ footer {
   background-color: burlywood;
   text-align: center;
   font-size: 15px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .contacts {
@@ -279,15 +279,14 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: bolder;
 }
 
 .contacts h3 {
-  margin: 1rem 0;
   text-decoration: underline;
 }
 
 .fa {
-  padding: 10px 0;
   font-size: 30px;
   text-align: center;
   text-decoration: none;

@@ -100,21 +100,21 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-weight: bolder;
 }
 
 .contacts h3 {
-  margin: 1rem 0;
   text-decoration: underline;
+}
+
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
 }
 .resources {
   display: flex;
   justify-content: center;
-}
-.fa {
-  padding: 10px 0;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
